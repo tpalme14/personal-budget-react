@@ -1,3 +1,5 @@
+import MyChart from "./MyChart";
+
 function HomePage() {
     return (
         <div className="container center">
@@ -60,14 +62,13 @@ function HomePage() {
 
                 <article>
                     <h1>Chart</h1>
-                    <p>
-                        <canvas id="myChart" width="400" height="400"></canvas>
-                    </p>
+                    <p><MyChart/></p>
                 </article>
             </div>
         </div>
     );
   }
   
+
   export default HomePage;
   
