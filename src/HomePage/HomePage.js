@@ -1,10 +1,11 @@
 import MyChart from "./MyChart";
+import ExtraChart from "./ExtraChart";
 
 function HomePage() {
     return (
         <div className="container center">
 
-            <div class="page-area">
+            <div className="page-area">
                 <article>
                     <h1>Stay on track</h1>
                     <p>
@@ -63,6 +64,11 @@ function HomePage() {
                 <article>
                     <h1>Chart</h1>
                     <p><MyChart/></p>
+                </article>
+
+                <article>
+                    <h1>Extra Chart</h1>
+                    <div id = "ExtraChart"><ExtraChart/></div>
                 </article>
             </div>
         </div>
