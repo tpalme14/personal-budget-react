@@ -1,11 +1,10 @@
 import * as d3 from 'd3';
-import './ExtraChart.css';
+import './ExtraChart.scss';
 
 const ExtraChart = () => {
         d3.json('/budget.json', function(error, data) {
             if (error) throw error;
             update(data.myBudget);
-            console.log(data)
         });
     d3.select().select("svg").remove();
     var svg = d3.select("#ExtraChart")
